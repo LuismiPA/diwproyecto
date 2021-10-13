@@ -9,15 +9,16 @@
     </head>
     <body>  
         <header>
-            <img src="assets/images/yourbite.png">
+            <a href="index.html"><img src="assets/images/yourbite.png" alt="logo"></a>
             <h1>YOURBITE</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">contacto</a>
+                <a href="servicios.html">servicios</a>
+            </nav>
         </header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.html">contacto</a>
-            <a href="servicios.html">servicios</a>
-        </nav>
+    
         <aside>
             <a href="#articulo1">Servidores Web</a>
             <a href="#articulo2">CSS</a>
@@ -27,7 +28,7 @@
 
         <main>
             <section>
-                <article name="arciculo1" id="articulo1">
+                <article id="articulo1">
                     <h2>Frases de Platón</h2>
                     <ul>
                         <li>Apache</li>
@@ -36,7 +37,7 @@
                         <li>Google</li>
                     </ul>
                 </article>
-                <article name="arciculo2" id="articulo2">
+                <article id="articulo2">
                     <h2>Ejemplo basico CSS</h2>
 <pre>
     header img{
@@ -44,7 +45,7 @@
     }
 </pre>
                 </article>
-                <article name="arciculo3" id="articulo3">
+                <article id="articulo3">
                     <h2>Lista de servidores web</h2>
                     <ol>
                         
@@ -70,7 +71,7 @@
                     </figure>
                 </article>
 
-                <article name="arciculo4" id="articulo4">
+                <article id="articulo4">
                     <h2>Definiciones</h2>
                         <dl>
                             <dt>Actualizar</dt>
@@ -86,8 +87,23 @@
         </main>
 
         <footer>
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
+            <div>
+                <h3>Información general</h3>
+                <p>Quienes somos</p>
+                <p>Donde estamos</p>
+            </div>
+            <div>
+                <h3>Redes sociales</h3>
+                <img src="twitter.png" alt="twitter">
+                <img src="facebook.png" alt="facebook">
+                <img src="whatsapp.png" alt="whatsapp">
+            </div>
+            <div>
+                <h3>Metodos de pago</h3>
+                    <img src="visa.png" alt="visa">
+                    <img src="mastercard.png" alt="mastercard">
+                    <img src="paypal.png" alt="paypal">
+            </div>
         </footer>
     </body>
 </html>

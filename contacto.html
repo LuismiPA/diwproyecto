@@ -10,49 +10,70 @@
 </head>
 <body>
     <header>
-        <img src="assets/images/yourbite.png">
+        <a href="index.html"><img src="assets/images/yourbite.png" alt="logo"></a>
         <h1>YOURBITE</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">contacto</a>
+            <a href="servicios.html">servicios</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contacto.html">contacto</a>
-        <a href="servicios.html">servicios</a>
-    </nav>
 
-        <form action="">
+
+        <form action="formulario.php" method="GET">
             <p>
                 <label for="nombre">Nombre: </label>
-                <input name="nombre" type="text" pattern="[a-zA-Z0-9]{30}" placeholder="Indica tu nombre" required/>
+                <input name="nombre" id="nombre" type="text" pattern="[a-zA-Z0-9]{30}" placeholder="Indica tu nombre" required/>
             </p>
             
             <p>
                 <label for="email">Email: </label>
-                <input name="email" type="text" placeholder="Indica tu email" required/>
+                <input name="email" id="email" type="text" placeholder="Indica tu email" required/>
             </p>
 
             <p>
                 <label for="edad">Edad: </label>
-                <input name="edad" type="number" min="18" max="99" placeholder="Debes ser +18" required/>
+                <input name="edad" id="edad" type="number" min="18" max="99" placeholder="Debes ser +18" required/>
             </p>
 
             <p>
                 <label for="telefono">Telefono: </label>
-                <input name="telefono" type="text" pattern="{9}" placeholder="Indica tu telefono" required/>
+                <input name="telefono" id="telefono" type="text" pattern="{9}" placeholder="Indica tu telefono" required/>
             </p>
 
             <p>
                 <label for="consulta">Consulta: </label>
-                <input name="consulta" type="textarea" placeholder="Escribe aquí tu consulta" required/>
+                <textarea name="consulta" id="consulta" rows="8" cols="50" placeholder="Escribe aquí tu consulta" required></textarea>
             </p>
             
             <p>
                 <label for="terminos">Terminos y condiciones de uso: </label>
-                <input name="terminos" type="checkbox" required/>
+                <input name="terminos" id="terminos" type="checkbox" required/>
             </p>
 
             <input type="submit" value="Enviar" />
                 
         </form>
+
+    <footer>
+        <div>
+            <h3>Información general</h3>
+            <p>Quienes somos</p>
+            <p>Donde estamos</p>
+        </div>
+        <div>
+            <h3>Redes sociales</h3>
+            <img src="twitter.png" alt="twitter">
+            <img src="facebook.png" alt="facebook">
+            <img src="whatsapp.png" alt="whatsapp">
+        </div>
+        <div>
+            <h3>Metodos de pago</h3>
+                <img src="visa.png" alt="visa">
+                <img src="mastercard.png" alt="mastercard">
+                <img src="paypal.png" alt="paypal">
+        </div>
+    </footer>
 </body>
 </html>

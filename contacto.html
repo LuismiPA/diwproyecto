@@ -1,79 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/estilo.css">
-
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="https://kit.fontawesome.com/0526dbb7ed.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <a href="index.html"><img src="assets/images/yourbite.png" alt="logo"></a>
-        <h1>YOURBITE</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.html">contacto</a>
-            <a href="servicios.html">servicios</a>
-        </nav>
-    </header>
+    <div class="contenedorPrincipal">
+        <header>
+            <a href="index.html"><img src="assets/images/yourbite.png" alt="logo"></a>
+            <h1>YOURBITE</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">contacto</a>
+                <a href="servicios.html">servicios</a>
+            </nav>
+        </header>
 
 
         <form action="formulario.php" method="GET">
             <p>
                 <label for="nombre">Nombre: </label>
-                <input name="nombre" id="nombre" type="text" pattern="[a-zA-Z0-9]{30}" placeholder="Indica tu nombre" autofocus="autofocus" required/>
+                <input name="nombre" id="nombre" type="text" pattern="[a-zA-Z0-9]{30}" placeholder="Indica tu nombre"
+                    autofocus="autofocus" required />
             </p>
-            
+
             <p>
                 <label for="email">Email: </label>
-                <input name="email" id="email" type="text" placeholder="Indica tu email" required/>
+                <input name="email" id="email" type="text" placeholder="Indica tu email" required />
             </p>
 
             <p>
                 <label for="edad">Edad: </label>
-                <input name="edad" id="edad" type="number" min="18" max="99" placeholder="Debes ser +18" required/>
+                <input name="edad" id="edad" type="number" min="18" max="99" placeholder="Debes ser +18" required />
             </p>
 
             <p>
                 <label for="telefono">Telefono: </label>
-                <input name="telefono" id="telefono" type="text" pattern="{9}" placeholder="Indica tu telefono" required/>
+                <input name="telefono" id="telefono" type="text" pattern="{9}" placeholder="Indica tu telefono"
+                    required />
             </p>
 
             <p>
                 <label for="consulta">Consulta: </label>
-                <textarea name="consulta" id="consulta" rows="8" cols="50" placeholder="Escribe aquí tu consulta" required></textarea>
+                <textarea name="consulta" id="consulta" rows="8" cols="50" placeholder="Escribe aquí tu consulta"
+                    required></textarea>
             </p>
-            
+
             <p>
                 <label for="terminos">Terminos y condiciones de uso: </label>
-                <input name="terminos" id="terminos" type="checkbox" required/>
+                <input name="terminos" id="terminos" type="checkbox" required />
             </p>
 
             <input type="submit" value="Enviar" />
-                
+
         </form>
 
-    <footer>
-        <div>
-            <h3>Información general</h3>
-            <p>Quienes somos</p>
-            <p>Donde estamos</p>
-        </div>
-        <div>
-            <h3>Redes sociales</h3>
-            <img src="twitter.png" alt="twitter">
-            <img src="facebook.png" alt="facebook">
-            <img src="whatsapp.png" alt="whatsapp">
-        </div>
-        <div>
-            <h3>Metodos de pago</h3>
-                <img src="visa.png" alt="visa">
-                <img src="mastercard.png" alt="mastercard">
-                <img src="paypal.png" alt="paypal">
-        </div>
-    </footer>
+        <footer>
+            <div class="footers">
+                <h3>Información general</h3>
+                <p>Quienes somos</p>
+                <p>Donde estamos</p>
+            </div>
+            <div class="footers">
+                <h3>Redes Sociales</h3>
+                <a href="#"><i class="fab fa-facebook-square iconos" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square iconos" title="twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp-square iconos" title="whatsapp"></i></a>
+            </div>
+            <div class="footers">
+                <h3>Metodos de pago</h3>
+                <a href="#"><i class="fab fa-cc-visa iconos"></i></a>
+                <a href="#"><i class="fab fa-cc-mastercard iconos"></i></a>
+                <a href="#"><i class="fab fa-cc-paypal iconos"></i></a>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

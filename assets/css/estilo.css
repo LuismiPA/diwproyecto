@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+/* Estilos generales*/
+
+*{
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+}
+.contenedorPrincipal{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+header img{
+    width: 50px;
+    overflow: hidden;
+}
+
+nav{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+nav a{
+    word-spacing: 25%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    letter-spacing: 0,5em;
+}
+
+.iconos{
+    color:rgb(91, 188, 233);
+    font-size: 50px;
+}
+
+footer{
+    clear:both;
+    background-color: #000000;
+    color:white;
+    overflow: hidden;
+}
+
+.footers{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Estilo index */
+
+div#areaHero{
+    background-image: url(assets/images/areaHero.jpg);
+    width: 100%;
+}
+
+
+table,td,tr,th{
+    border-collapse: collapse;
+    border: solid black 1px;
+    color:white;
+}
+/* Estilo Blog*/
+
+.blog {
+    /*clear: both;*/
+    background-color: white;
+    width: 70%;
+    float: left;
+}
+aside{
+        width: 30%;
+        float: left;
+        padding: 30px;
+}
+aside ul li{
+    text-decoration: none;
+  }

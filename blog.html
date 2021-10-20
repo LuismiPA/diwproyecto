@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Actividad 2</title>
-        <link rel="stylesheet" href="css/estilo.css">
-    </head>
-    <body>  
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="https://kit.fontawesome.com/0526dbb7ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="contenedorPrincipal">
         <header>
             <a href="index.html"><img src="assets/images/yourbite.png" alt="logo"></a>
             <h1>YOURBITE</h1>
@@ -18,15 +22,21 @@
                 <a href="servicios.html">servicios</a>
             </nav>
         </header>
-    
-        <aside>
-            <a href="#articulo1">Servidores Web</a>
-            <a href="#articulo2">CSS</a>
-            <a href="#articulo3">Platón</a>
-            <a href="#articulo4">Definiciones</a>
-        </aside>
+        <div>
 
-        <main>
+            <aside>
+                <h4>Índice</h4>
+                <ul>
+                    <li><a href="#articulo1">Servidores Web</a></li>
+                    <li> <a href="#articulo2">CSS</a></li>
+                    <li> <a href="#articulo3">Platón</a></li>
+                    <li> <a href="#articulo4">Definiciones</a></li>
+                </ul>
+            </aside>
+
+        </div>
+
+        <main class="blog">
             <section>
                 <article id="articulo1">
                     <h2>Frases de Platón</h2>
@@ -39,30 +49,30 @@
                 </article>
                 <article id="articulo2">
                     <h2>Ejemplo basico CSS</h2>
-<pre>
+                    <pre>
     header img{
         width: 50px;
     }
 </pre>
                 </article>
                 <article id="articulo3">
-                    <h2>Lista de servidores web</h2>
+                    <h2>Frases Platón</h2>
                     <ol>
-                        
+
                         <li>
                             <blockquote>
                                 De noche, especialmente, es hermoso creer en la luz.
-                             </blockquote>
+                            </blockquote>
                         </li>
                         <li>
                             <blockquote>
                                 La mejor riqueza es contentarse viviendo con poco.
-                             </blockquote>
+                            </blockquote>
                         </li>
                         <li>
                             <blockquote>
                                 Pensar es el diálogo del alma consigo misma.
-                             </blockquote>
+                            </blockquote>
                         </li>
                     </ol>
                     <figure>
@@ -73,37 +83,41 @@
 
                 <article id="articulo4">
                     <h2>Definiciones</h2>
-                        <dl>
-                            <dt>Actualizar</dt>
-                                <dd>Volver a cargar o mostrar el contenido de una página Web o una ventana.</dd>
-                            <dt>Add-ons</dt>
-                                <dd>Añadidos o módulos que se incorporan a los que ya se tienen y que proporcionan nuevas funcionalidades.</dd>
-                            <dt>Backup</dt>
-                                <dd>Aplicación de copia de seguridad de ficheros, carpetas o unidades completas que permite dividir la información o ficheros en varios disquetes y que además la comprime.</dd>
-                        </dl> 
+                    <dl>
+                        <dt>Actualizar</dt>
+                        <dd>Volver a cargar o mostrar el contenido de una página Web o una ventana.</dd>
+                        <dt>Add-ons</dt>
+                        <dd>Añadidos o módulos que se incorporan a los que ya se tienen y que proporcionan nuevas
+                            funcionalidades.</dd>
+                        <dt>Backup</dt>
+                        <dd>Aplicación de copia de seguridad de ficheros, carpetas o unidades completas que permite
+                            dividir la información o ficheros en varios disquetes y que además la comprime.</dd>
+                    </dl>
 
                 </article>
             </section>
         </main>
 
         <footer>
-            <div>
+            <div class="footers">
                 <h3>Información general</h3>
                 <p>Quienes somos</p>
                 <p>Donde estamos</p>
             </div>
-            <div>
-                <h3>Redes sociales</h3>
-                <img src="twitter.png" alt="twitter">
-                <img src="facebook.png" alt="facebook">
-                <img src="whatsapp.png" alt="whatsapp">
+            <div class="footers">
+                <h3>Redes Sociales</h3>
+                <a href="#"><i class="fab fa-facebook-square iconos" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square iconos" title="twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp-square iconos" title="whatsapp"></i></a>
             </div>
-            <div>
+            <div class="footers">
                 <h3>Metodos de pago</h3>
-                    <img src="visa.png" alt="visa">
-                    <img src="mastercard.png" alt="mastercard">
-                    <img src="paypal.png" alt="paypal">
+                <a href="#"><i class="fab fa-cc-visa iconos"></i></a>
+                <a href="#"><i class="fab fa-cc-mastercard iconos"></i></a>
+                <a href="#"><i class="fab fa-cc-paypal iconos"></i></a>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
+
 </html>

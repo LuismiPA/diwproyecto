@@ -13,75 +13,68 @@
 <body>
     <div class="contenedorPrincipal">
         <header>
-            <a href="index.html"><img src="assets/images/yourbite.png" alt="logo"></a>
-            <h1>YOURBITE</h1>
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/yourbite.png" alt="logo"></a>
+                <p class="tituloLogo">YOURBITE</p>
+            </div>
             <nav>
-                <a href="index.html">Inicio</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">contacto</a>
-                <a href="servicios.html">servicios</a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                    <li><a href="servicios.html">servicios</a></li>
+                </ul>
             </nav>
         </header>
 
-
+        <h1 class="tituloConsulta">Contacta con nosotros</h1>
         <form action="formulario.php" method="GET">
-            <p>
-                <label for="nombre">Nombre: </label>
-                <input name="nombre" id="nombre" type="text" pattern="[a-zA-Z0-9]{30}" placeholder="Indica tu nombre"
-                    autofocus="autofocus" required />
-            </p>
 
-            <p>
-                <label for="email">Email: </label>
-                <input name="email" id="email" type="text" placeholder="Indica tu email" required />
-            </p>
+            <label for="nombre"></label>
+            <input name="nombre" id="nombre" type="text" pattern="[a-zA-Z0-9]{30}" placeholder="Indica tu nombre"
+                autofocus="autofocus" required />
 
-            <p>
-                <label for="edad">Edad: </label>
-                <input name="edad" id="edad" type="number" min="18" max="99" placeholder="Debes ser +18" required />
-            </p>
+            <label for="email"></label>
+            <input name="email" id="email" type="text" placeholder="Indica tu email" required />
 
-            <p>
-                <label for="telefono">Telefono: </label>
-                <input name="telefono" id="telefono" type="text" pattern="{9}" placeholder="Indica tu telefono"
-                    required />
-            </p>
+            <label for="edad"></label>
+            <input name="edad" id="edad" type="number" min="18" max="99" placeholder="Edad (mayor de 18)" required />
 
-            <p>
-                <label for="consulta">Consulta: </label>
-                <textarea name="consulta" id="consulta" rows="8" cols="50" placeholder="Escribe aquí tu consulta"
-                    required></textarea>
-            </p>
+            <label for="telefono"></label>
+            <input name="telefono" id="telefono" type="text" pattern="{9}" placeholder="Teléfono" required />
 
-            <p>
-                <label for="terminos">Terminos y condiciones de uso: </label>
-                <input name="terminos" id="terminos" type="checkbox" required />
-            </p>
+            <label for="consulta"></label>
+            <textarea name="consulta" id="consulta" rows="8" cols="50" placeholder="Escribe aquí tu consulta"
+                required></textarea>
 
-            <input type="submit" value="Enviar" />
+            <label for="terminos">Terminos y condiciones de uso: </label>
+            <input name="terminos" id="terminos" type="checkbox" required />
+
+
+            <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
 
         </form>
-
-        <footer>
-            <div class="footers">
-                <h3>Información general</h3>
-                <p>Quienes somos</p>
-                <p>Donde estamos</p>
-            </div>
-            <div class="footers">
-                <h3>Redes Sociales</h3>
-                <a href="#"><i class="fab fa-facebook-square iconos" title="facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter-square iconos" title="twitter"></i></a>
-                <a href="#"><i class="fab fa-whatsapp-square iconos" title="whatsapp"></i></a>
-            </div>
-            <div class="footers">
-                <h3>Metodos de pago</h3>
-                <a href="#"><i class="fab fa-cc-visa iconos"></i></a>
-                <a href="#"><i class="fab fa-cc-mastercard iconos"></i></a>
-                <a href="#"><i class="fab fa-cc-paypal iconos"></i></a>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <div class="footers">
+            <h3>Información general</h3>
+            <p>Quienes somos</p>
+            <p>Donde estamos</p>
+        </div>
+        <div class="footers">
+            <h3>Redes Sociales</h3>
+            <a href="#"><i class="fab fa-facebook-square iconos" title="facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter-square iconos" title="twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp-square iconos" title="whatsapp"></i></a>
+        </div>
+        <div class="footers">
+            <h3>Metodos de pago</h3>
+            <a href="#"><i class="fab fa-cc-visa iconos"></i></a>
+            <a href="#"><i class="fab fa-cc-mastercard iconos"></i></a>
+            <a href="#"><i class="fab fa-cc-paypal iconos"></i></a>
+        </div>
+    </footer>
+
 </body>
 
 </html>

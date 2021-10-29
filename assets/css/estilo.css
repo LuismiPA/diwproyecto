@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
 /* Estilos generales*/
@@ -9,30 +9,62 @@
     font-family: 'Cormorant Garamond', serif;
     box-sizing: border-box;
 }
-.contenedorPrincipal{
-    max-width: 1000px;
-    margin: 0 auto;
+body{
+    background-color: grey;
 }
 
 header {
     text-align: center;
+    padding-bottom: 0px;
+    background-color:rgb(91, 188, 233);
+    color:white;
+    overflow: hidden;
 }
 header img{
     width: 50px;
     overflow: hidden;
 }
-
+.tituloLogo{
+    font-family: 'Rampart One', cursive;
+    font-size: 2em;
+    letter-spacing: 0,5em;
+}
+.logo{
+    padding: 10px 0px 0px 20px;
+    float:left;
+}
 nav{
-    float: left;
-    width: 33.33%;
-    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
 }
-nav a{
-    word-spacing: 25%;
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    padding: 40px 20px;
+}
+nav li{
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+nav li a{
+    font-size: 2em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 20px;
+    color:white;
 }
 
+.contenedorPrincipal{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background-color: white;
+}
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Pacifico', cursive;
     font-size: 2em;
     letter-spacing: 0,5em;
 }
@@ -47,6 +79,9 @@ footer{
     background-color: #000000;
     color:white;
     overflow: hidden;
+    margin-top: 50px;
+    max-width: 1000px;
+    margin:0 auto;
 }
 
 .footers{
@@ -63,24 +98,70 @@ div#areaHero{
 }
 
 
-table,td,tr,th{
-    border-collapse: collapse;
-    border: solid black 1px;
-    color:white;
-}
 /* Estilo Blog*/
-
+.aside{
+    width: 30%;
+    float:left;
+    margin:0 auto;
+    padding-left: 20px;
+    padding-top: 20px;
+}
 .blog {
     /*clear: both;*/
     background-color: white;
     width: 70%;
-    float: left;
+    float: right;
+    margin: 0 auto;
+    
 }
-aside{
-        width: 30%;
-        float: left;
-        padding: 30px;
+
+/*css formulario*/
+
+
+.tituloConsulta{
+    padding: 30px;
 }
-aside ul li{
-    text-decoration: none;
-  }
+form{
+    padding: 60px;
+    max-width: 700px;
+    background-color: #E7E7E7;
+    margin: 50px auto;
+}
+
+form input[type="text"],input[type="number"], form textarea{
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    box-sizing: border-box; 
+    border: none; 
+    color: #525c66; 
+    font-size: 1em;
+    resize: none; 
+}
+
+form button {
+    display: block;
+    background-color: #0095eb;
+    padding: 10px 45px 10px 45px;
+    margin-top: 10px;
+    border: 0;
+    font-size: 1em; 
+    color: white;
+}
+
+textarea {  resize: none;}
+
+label, input[Type="checkbox"]{
+    padding-bottom: 5px;
+    font-size: 23px;
+    vertical-align: middle;
+}
+
+/*servicios*/
+
+table,td,tr,th{
+    caption-side: bottom;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: solid black 1px;
+}

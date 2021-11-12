@@ -12,12 +12,12 @@
 }
 body{
     background-color: grey;
-
 }
 
 header {
     padding-bottom: 0px;
     background-color:rgb(91, 188, 233);
+    background: radial-gradient(circle, rgba(233,233,233,1) , rgb(91, 188, 233) 100%);
     color:white;
     -webkit-box-shadow: 3px -10px 18px 23px rgba(112,209,255,0.89); 
     box-shadow: 3px -10px 18px 23px rgba(112,209,255,0.89);
@@ -111,10 +111,41 @@ footer{
 
 /* Estilo index */
 
-div#areaHero{
-    background-image: url(assets/images/areaHero.jpg);
-    width: 100%;
+.parallax {
+    background-image: url("../images/areaHero.jpg");
+    height: 400px; 
+    background-attachment: fixed; 
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 20px;
+  }
+  .parallax img{
+    max-width: 350px;
+  }
+
+  .img-container {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    
 }
+.img-container img{
+    width: 100%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+  }
 
 
 /* Estilo Blog*/
@@ -122,7 +153,11 @@ div#areaHero{
     width: 30%;
     float:left;
     margin:0 auto;
-     padding: 10px 30px;
+    padding: 10px 30px;
+    
+}
+.aside ul{
+    list-style-image: url("../images/yourbiteLista1.png")
 }
 .blog {
     /*clear: both;*/
@@ -187,5 +222,5 @@ table,td,tr,th{
     caption-side: bottom;
     margin: 20px auto;
     border-collapse: collapse;
-    border: solid black 1px;
+    border: solid #5bbee9 3px;
 }

@@ -3,162 +3,178 @@
 
 /* Estilos generales*/
 
-*{
+* {
     margin: 0;
     font-size: 1em;
     font-family: 'Cormorant Garamond', serif;
     box-sizing: border-box;
-    line-height :1.5em;
+    line-height: 1.5em;
 }
-body{
+
+body {
     background-color: grey;
 }
 
 header {
     padding-bottom: 0px;
-    background-color:rgb(91, 188, 233);
-    background: radial-gradient(circle, rgba(233,233,233,1) , rgb(91, 188, 233) 100%);
-    color:white;
-    -webkit-box-shadow: 3px -10px 18px 23px rgba(112,209,255,0.89); 
-    box-shadow: 3px -10px 18px 23px rgba(112,209,255,0.89);
+    background-color: rgb(91, 188, 233);
+    background: radial-gradient(circle, rgba(233, 233, 233, 1), rgb(91, 188, 233) 100%);
+    color: white;
+    -webkit-box-shadow: 3px -10px 18px 23px rgba(112, 209, 255, 0.89);
+    box-shadow: 3px -10px 18px 23px rgba(112, 209, 255, 0.89);
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
 }
 
-.blog p{
+.blog p {
     margin-bottom: 2em;
 }
-.contenido{
+
+.contenido {
     max-width: 1000px;
-    margin : 0 auto;
+    margin: 0 auto;
 }
 
-header img{
+header img {
     width: 50px;
     overflow: hidden;
 }
-.tituloLogo{
+
+.tituloLogo {
     font-family: 'Rampart One', cursive;
     font-size: 2em;
-    letter-spacing: 0,5em;
+    letter-spacing: 0, 5em;
 }
-.logo{
-    float:left;
+
+.logo {
+    float: left;
     color: white;
     margin: 10px 10px;
 }
-.logo p{
+
+.logo p {
     margin-left: 2px;
     line-height: 50px;
-    float:inline-end;
+    float: inline-end;
 }
-nav{
+
+nav {
     margin: 0 auto;
 }
-nav ul{
+
+nav ul {
     float: right;
     list-style: none;
     text-align: center;
     vertical-align: top;
-    
 }
-nav li{
+
+nav li {
     list-style-type: none;
     padding: 0px;
     display: inline;
 }
-nav li a{
+
+nav li a {
     font-size: 2em;
     text-decoration: none;
     line-height: 70px;
     padding: 15px 20px;
-    color:white;
+    color: white;
 }
 
-.contenedorPrincipal{
+.contenedorPrincipal {
     /* max-width: 1000px; */
     margin: 0 auto;
     padding-bottom: 100px;
     overflow: hidden;
     background-color: white;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 2em;
-    letter-spacing: 0,5em;
+    letter-spacing: 0, 5em;
 }
 
-.iconos{
-    color:rgb(91, 188, 233);
+.iconos {
+    color: rgb(91, 188, 233);
     font-size: 50px;
 }
 
-footer{
-    clear:both;
+footer {
+    clear: both;
     background-color: #000000;
-    color:white;
+    color: white;
     overflow: hidden;
     margin-top: 50px;
     /* max-width: 1000px; */
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.footers{
+.footers {
     float: left;
     width: 33.33%;
     text-align: center;
 }
 
+
 /* Estilo index */
 
 .parallax {
     background-image: url("../images/areaHero.jpg");
-    height: 400px; 
-    background-attachment: fixed; 
+    height: 400px;
+    background-attachment: fixed;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
-    
-    display:flex;
+    background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 20px 20px;
-  }
-  .parallax img{
-    max-width: 350px;
-  }
+}
 
-  .img-container {
+.parallax img {
+    max-width: 350px;
+}
+
+.img-container {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     float: left;
     width: 33.33%;
     padding: 20px;
-    
 }
-.img-container img{
+
+.img-container img {
     width: 100%;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-  }
+}
 
 
 /* Estilo Blog*/
-.aside{
+
+.aside {
     width: 30%;
-    float:left;
-    margin:0 auto;
+    float: left;
+    margin: 0 auto;
     padding: 10px 30px;
-    
 }
-.aside ul{
+
+.aside ul {
     list-style-image: url("../images/yourbiteLista1.png")
 }
+
 .blog {
     /*clear: both;*/
     background-color: white;
@@ -166,35 +182,83 @@ footer{
     float: right;
     margin: 0 auto;
     padding: 10px 30px;
-    
 }
 
-#articulo1 iframe{
+#articulo1 iframe {
     width: 100%;
 }
 
+#articulo4 {
+    margin-bottom: 20px;
+}
+
+article#articulo4 input {
+    background-color: #0095eb;
+    border: solid #0095eb;
+    border-radius: 10px;
+}
+
+article#articulo5 input {
+    display: block;
+    width: 40%;
+    background-color: #0095eb;
+    border: solid #0095eb;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+}
+
+.animacionBotones {
+    animation-duration: 5s;
+    animation-name: animBtn;
+    animation-iteration-count: initial;
+}
+
+@keyframes animBtn {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+        margin-left: 100%;
+        width: 40%;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+        margin-left: 20%;
+        width: 40%;
+    }
+}
+
+
 /*css formulario*/
 
-
-.tituloConsulta{
+.tituloConsulta {
     padding: 30px;
 }
-form{
+
+form {
     padding: 60px;
     max-width: 700px;
     background-color: #E7E7E7;
     margin: 50px auto;
 }
 
-form input[type="text"],input[type="number"], form textarea{
+form input[type="text"],
+input[type="number"],
+form textarea {
     margin-bottom: 15px;
     font-family: "Roboto", sans-serif;
     width: 100%;
-    box-sizing: border-box; 
-    border: none; 
-    color: #525c66; 
+    box-sizing: border-box;
+    border: none;
+    color: #525c66;
     font-size: 1em;
-    resize: none; 
+    resize: none;
 }
 
 form button {
@@ -203,22 +267,28 @@ form button {
     padding: 10px 45px 10px 45px;
     margin-top: 10px;
     border: 0;
-    font-size: 1em; 
+    font-size: 1em;
     color: white;
 }
 
-textarea {  resize: none;}
+textarea {
+    resize: none;
+}
 
-
-label, input[Type="checkbox"]{
+label,
+input[Type="checkbox"] {
     padding-bottom: 5px;
     font-size: 23px;
     vertical-align: middle;
 }
 
+
 /*servicios*/
 
-table,td,tr,th{
+table,
+td,
+tr,
+th {
     caption-side: bottom;
     margin: 20px auto;
     border-collapse: collapse;
